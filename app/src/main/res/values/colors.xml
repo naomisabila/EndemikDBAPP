@@ -20,6 +20,8 @@
     <color name="black">#000000</color>
     <color name="gray_text">#757575</color>
     <color name="bg_light">#F8F9FF</color>
+    <color name="bg_splash">#1A0B2E</color>
+    <color name="splash_progress_bg">#33FFFFFF</color>
 
     <!-- Updated Gradients using the new palette -->
     <color name="grad_red_start">#FF70AB</color>
