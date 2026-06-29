@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- New Color Palette -->
+    <color name="color_1">#C3FF93</color> <!-- Light Green -->
+    <color name="color_2">#FFDB5C</color> <!-- Yellow -->
+    <color name="color_3">#FFAF61</color> <!-- Orange -->
+    <color name="color_4">#FF70AB</color> <!-- Pink -->
+
+    <!-- Semantic mapping -->
+    <color name="primary">#FF70AB</color>
+    <color name="secondary">#FFAF61</color>
+    <color name="tertiary">#FFDB5C</color>
+    <color name="accent">#C3FF93</color>
+
+    <!-- Compatibility mapping for existing files -->
+    <color name="purple_primary">#FF70AB</color>
+    <color name="purple_light">#C3FF93</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray_text">#757575</color>
+    <color name="bg_light">#F8F9FF</color>
+
+    <!-- Updated Gradients using the new palette -->
+    <color name="grad_red_start">#FF70AB</color>
+    <color name="grad_red_end">#FFAF61</color>
+    <color name="grad_green_start">#C3FF93</color>
+    <color name="grad_green_end">#FFDB5C</color>
+    <color name="grad_yellow_start">#FFDB5C</color>
+    <color name="grad_yellow_end">#FFAF61</color>
+</resources>

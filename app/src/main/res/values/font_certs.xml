@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Kosongkan untuk mencegah crash base-64 -->
+    <array name="com_google_android_gms_fonts_certs"></array>
+    <string-array name="com_google_android_gms_fonts_certs_dev"></string-array>
+    <string-array name="com_google_android_gms_fonts_certs_prod"></string-array>
+</resources>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_light">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/layoutDetailHeader"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:background="@color/grad_yellow_start">
+
+                <ImageView
+                    android:id="@+id/imgDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerInside"
+                    android:padding="40dp" />
+
+                <ImageView
+                    android:id="@+id/btnBack"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="16dp"
+                    android:padding="10dp"
+                    android:background="@drawable/bg_icon_circle_white"
+                    android:src="@android:drawable/ic_menu_revert" />
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-40dp"
+                app:cardCornerRadius="32dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="24dp">
+
+                    <TextView
+                        android:id="@+id/tvTag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_pill_purple_light"
+                        android:paddingHorizontal="12dp"
+                        android:paddingVertical="4dp"
+                        android:text="FAUNA"
+                        style="@style/TextAppearance.Note"
+                        android:textColor="@color/purple_primary"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/tvJudul"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="Komodo"
+                        style="@style/TextAppearance.Hero"
+                        android:textColor="@color/black"
+                        android:textSize="28sp" />
+
+                    <TextView
+                        android:id="@+id/tvLatin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Varanus komodoensis"
+                        style="@style/TextAppearance.Scientific"
+                        android:textColor="@color/gray_text"
+                        android:textSize="14sp"
+                        android:textStyle="italic" />
+
+                    <!-- Info Grid -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_info_box"
+                            android:orientation="vertical"
+                            android:padding="12dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="REGION"
+                                style="@style/TextAppearance.Note"
+                                android:textColor="@color/gray_text"
+                                app:drawableStartCompat="@android:drawable/ic_menu_mylocation"
+                                android:drawablePadding="4dp"/>
+                            <TextView
+                                android:id="@+id/tvRegion"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Nusa Tenggara Timur"
+                                style="@style/TextAppearance.CardTitle"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <View android:layout_width="12dp" android:layout_height="1dp" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_info_box"
+                            android:orientation="vertical"
+                            android:padding="12dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="STATUS"
+                                style="@style/TextAppearance.Note"
+                                android:textColor="@color/gray_text"
+                                app:drawableStartCompat="@android:drawable/ic_dialog_info"
+                                android:drawablePadding="4dp"/>
+                            <TextView
+                                android:id="@+id/tvStatus"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Rentan"
+                                style="@style/TextAppearance.CardTitle"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/bg_info_box"
+                        android:orientation="vertical"
+                        android:padding="12dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="HABITAT"
+                            style="@style/TextAppearance.Note"
+                            android:textColor="@color/gray_text"
+                            app:drawableStartCompat="@android:drawable/ic_menu_compass"
+                            android:drawablePadding="4dp"/>
+                        <TextView
+                            android:id="@+id/tvHabitat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pulau Komodo, Rinca, Flores"
+                            style="@style/TextAppearance.CardTitle"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:text="Deskripsi"
+                        style="@style/TextAppearance.CardTitle"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tvDeskripsi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:lineSpacingExtra="4dp"
+                        android:text="Deskripsi lengkap di sini..."
+                        style="@style/TextAppearance.Scientific"
+                        android:textColor="@color/gray_text"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btnFavorit"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="32dp"
+                        android:backgroundTint="@color/purple_primary"
+                        android:text="Tambah ke Favorit"
+                        android:textAllCaps="false"
+                        app:cornerRadius="30dp"
+                        app:icon="@android:drawable/btn_star_big_off"
+                        app:iconGravity="textStart" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
